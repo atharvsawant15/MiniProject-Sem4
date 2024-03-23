@@ -11,16 +11,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(134,143,226,1) 26%, rgba(0,212,255,1) 100%);
 }
 
 .container{
     width: 900px;
     background: #fff;
     box-shadow: 0 2px 20px rgba(0, 0, 0, .3);
-    border-radius: 5px;
+    border-radius: 20px;
     overflow: hidden;
 }
-.translator_property .nuv-item{
+.translator_property {
+    border: 1px solid #c7c7c7;
+}
+.translator_property .nuv_item{
     display: flex;
     width: 100%;
     height: 50px;
@@ -31,13 +36,89 @@ body {
     padding: 0 20px;
 }
 
+.Property_from button{
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: aquamarine;
+    width: 150px;
+    margin: 40px;
+    margin-left: 130px;
+}
+
 .translator_property .nuv_item li select{
     outline: none;
     border-style: none;
-    padding: 10px 20px;
+    padding: 10px;
     font-size: 17px;
     font-weight: 500;
     color: #606060;
+    cursor: pointer;
+    transition: all .3s ease-out;
+   }
+   .translator_property .nuv_item li select:hover{
+    color: #111;
+   }
+   .bx-transfer{
+    font-size: 22px;
+    color: #606060;
+    cursor: pointer;
+    transition: all .3s ease-out;
+   }
+   .bx-transfer:hover{
+    color: #111;
+   }
+   .write_box{
+    display: flex;
+   }
+.Property_from, .Property_trans{
+    width: 100%;
+}
+.write_box .icons{
+    position: absolute;
+    
+    bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    
+    }
+.write_box textarea{
+    width: 100%;
+    height: 250px;
+    border-style: none;
+    outline: none;
+    resize: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #606060;
+    position: relative;
+    
 }
 
-;
+.write_box textarea:nth-child(1){
+border-right: 1px solid #c7c7c7;
+}
+.icons .bx{
+    width: 35px;
+    height: 35px;
+    background: #ddd;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+    color: #000;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+.icons .bx:hover{
+    background: #606060;
+    color: wheat;
+}
+code_length{
+    font-size: 18px;
+    color: #606060;
+}
