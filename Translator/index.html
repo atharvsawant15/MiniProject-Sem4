@@ -3,52 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Language translator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text To Language Translator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
     <div class="container">
-        <div class="translator_property">
-            <ul class="nuv_item">
-                <li>
+        <div class="wrapper">
+            <div class="text-input">
+                <textarea class="from-text" placeholder="Enter text"></textarea>
+                <textarea class="to_text" placeholder="Translation" readonly disabled ></textarea>
+            </div>
+            <ul class="controls">
+                <li class="row from">
+                    <div class="icons">
+                        <i id="from" class="fas fa-volume-up"></i>
+                        <i id="from" class="fas fa-copy"></i>
+                    </div>
                     <select>
-                       
+                        <!----<option value="en-US">English</option>
+                        <option value="hi-IN">Hindu</option>
+                        <option value="ne-NP">Nepali</option>
+                        <option value="ig-IB">Igbo</option>
+                        <option value="yo-YR">Yoruba</option>
+                        <option value="ha-HU">Hausa</option>---->
                     </select>
                 </li>
+                <li class="exchange"><i class="fas fa-exchange-alt"></i></li>
 
-                <li class="bx bx-transfer"></li>
-                <li>
-                    <select>
-                       
-                    </select>
+                <li class="row to">
+                    <select></select>
+                    <div class="icons">
+                        <i id="to" class="fas fa-volume-up"></i>
+                        <i id="to" class="fas fa-copy"></i>
+                    </div>
                 </li>
             </ul>
-            <div class="write_box">
-                <div class="Property_from">
-                    <textarea maxlength="5000" class="fromText" placeholder="Write your text here"></textarea>
-                    <button id="click-to-convert">Voice to text</button>
-                    <div class="icons">
-                        <span class="bx bx-volume-full"></span>
-                        <div class="code_length">0/5,000</div>
-                    </div>
-                </div>
-                <div class="Property_trans">
-                    <textarea class="toTranslate" disabled></textarea>
-                    <div class="icons">
-                        <span class="bx bx-volume-full"></span>
-                        <span class="bx bx-copy"></span>
-                    </div>
-                </div>            
-            </div>
         </div>
-    </div>
-    <script src="language.js"></script>
-    <script src="script.js"></script>
+        <button>Translate Text</button>
+        <button class="click_to_convert">Voice to Text</button>
+
+    <script src="countries.js"></script>
+    <script src="index.js"></script>
 </body>
-
-
 </html>
-
