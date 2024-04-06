@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Quiz</title>
+<link rel="stylesheet" href="fstyle.css">
+</head>
+<body>
+    <div class="screen">
+        <button class="button" id="EGbutton1" >English ↔ German</button>
+        <button class="button" id="EFbutton2" >English ↔ French</button>
+    </div> 
+    <script>
+        const RebtnEG = document.getElementById('EGbutton1'); 
+        const RebtnEF = document.getElementById('EFbutton2');
+
+        RebtnEG.addEventListener("click", function(){
+            window.location.href = "index.html";
+        });
+        RebtnEF.addEventListener("click", function(){
+            window.location.href = "index1.html";
+        });
+    </script>   
+</body>
+</html>
